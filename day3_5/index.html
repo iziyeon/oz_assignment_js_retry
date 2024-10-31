@@ -14,6 +14,37 @@
       // 0.5km 이상 2km 미만이면 "자전거를 추천합니다."
       // 2km 이상 10km 미만이면 "버스를 추천합니다."
       // 10km 이상이면 "지하철을 추천합니다."
+
+      let traffic = prompt("이동 거리(단위 : km)를 숫자만 입력하세요.")
+
+      //if문을 사용하는 경우
+      // if (traffic < 0.5){
+      //   alert("걷기를 추천합니다.")
+      // } else if (traffic >= 0.5 && traffic < 2){
+      //   alert("자전거를 추천합니다.")
+      // } else if (traffic >= 2 && traffic < 10){
+      //   alert("버스를 추천합니다.")
+      // } else {
+      //   alert("지하철을 추천합니다.")
+      // };
+
+      //switch문을 사용하는 경우
+      switch(true){
+        case traffic < 0.5 :
+        alert("걷기를 추천합니다.")
+        break;
+
+        case traffic >= 0.5 && traffic < 2 :
+        alert("자전거를 추천합니다.")
+        break;
+
+        case traffic >= 2 && traffic < 10 :
+        alert("버스를 추천합니다.")
+        break;
+        
+        default :
+        alert("지하철을 추천합니다.")
+      }
     </script>
   </body>
 </html>
