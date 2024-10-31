@@ -15,6 +15,40 @@
       // 70점 이상 80점 미만이면 C
       // 60점 이상 70점 미만이면 D
       // 60점 미만이면 F
+      let score = prompt("성적을 입력하세요")
+
+      //if문을 사용하는 경우
+
+      // if (score >= 90){
+      //   alert("A");
+      // }else if(score >= 80){
+      //   alert("B");
+      // }else if(score >= 70){
+      //   alert("C");
+      // }else if(score >= 60){
+      //   alert("D");
+      // }else{alert("F");}
+
+      //switch문을 사용하는 경우
+
+      switch(true){
+        case score >= 90:
+          alert("A");
+          break;
+        case score >= 80:
+          alert("B");
+          break;
+        case score >= 70:
+          alert("C");
+          break;
+        case score >= 60:
+          alert("D");
+          break;
+        default:
+          alert("F");
+      };
+
+    
     </script>
   </body>
 </html>
