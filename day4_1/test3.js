@@ -4,4 +4,9 @@
 // while 반복문으로 구현해야 합니다.
 let num = 1;
 let result = 0;
-while () {};
+while (num <= 10) {
+    result = num + result;
+    num++;
+};
+
+console.log(result);

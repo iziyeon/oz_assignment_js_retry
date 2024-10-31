@@ -16,4 +16,6 @@ console.log(`${num} x 9 = ${num * 9}`);
 console.log('여기서부터는 반복문을 사용해서 구현한 코드입니다.');
 // 조건1. 위 코드와 같은 결과가 나와야 합니다.
 // 조건2. for 반복문을 사용해야 합니다.
-for (;;) {}
+for (let i = 1; i < 10; i++) {
+    console.log(`${num} x ${i} = ${num * i}`)
+}
