@@ -7,15 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>사용자 정보 입력받고 출력하기</title>
     <style>
+      .color {
+        color: blue;
+      }
       /* 스타일을 여기에 추가하세요 */
     </style>
   </head>
   <body>
     <!-- 사용자 이름을 출력할 h1 태그 -->
-
+    <h1 class="name"></h1>
     <!-- 사용자 나이를 출력할 p 태그 -->
-
+    <p class="age"></p>
     <!-- 사용자가 좋아하는 색을 출력할 p 태그 -->
+    <p class="color"></p>
   </body>
   <script>
     /*
@@ -28,5 +32,14 @@
     6. 색깔의 타입을 typeof 연산자를 사용하여 콘솔에 출력한다.
     7. confirm이 true인지 false인지 콘솔에 출력한다.
     */
+
+    document.querySelector(".name");
+    document.querySelector(".age")
+    .textContent = `당신의 나이는 ${prompt("나이를 입력하세요")}세입니다.`;
+    document.querySelector(".color")
+    .textContent = `좋아하는 색깔은 ${prompt("좋아하는 색을 입력하세요")}입니다.`;
+    console.log(typeof(".color"));
+    console.log(confirm("취소나 확인을 눌러보시겠습니까?"));
+    
   </script>
 </html>
